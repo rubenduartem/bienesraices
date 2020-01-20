@@ -5,3 +5,18 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+.bg-success{
+    background-color: var(--primario)!important;
+}
+/*media query: da formato de acuerdo a un tamaño, en este caso la barra cambia a transparente cuando llegue a 768px */
+@media (min-widht:768px) { 
+    .barra.bg-success {
+        background-color: transparent!important;
+    }
+    .header .barra {
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+    }
+}
